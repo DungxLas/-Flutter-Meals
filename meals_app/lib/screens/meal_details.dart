@@ -58,7 +58,8 @@ class MealDetailsScreen extends ConsumerWidget {
               Hero(
                 tag: meal.id,
                 child: Image.network(
-                  meal.imageUrl,
+                  meal.imageUrl ??
+                      'https://img.pikbest.com/png-images/qiantu/black-hand-drawn-calligraphy-style-question-mark_2600189.png!w700wp',
                   height: 300,
                   width: double.infinity,
                   fit: BoxFit.cover,

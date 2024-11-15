@@ -32,7 +32,8 @@ class MealItem extends StatelessWidget {
               tag: meal.id,
               child: FadeInImage(
                 placeholder: MemoryImage(kTransparentImage),
-                image: NetworkImage(meal.imageUrl),
+                image: NetworkImage(meal.imageUrl ??
+                    'https://img.pikbest.com/png-images/qiantu/black-hand-drawn-calligraphy-style-question-mark_2600189.png!w700wp'),
                 fit: BoxFit.cover,
                 height: 200,
                 width: double.infinity,
